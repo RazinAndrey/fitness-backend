@@ -1,0 +1,15 @@
+# Dependency directories
+vendor/
+
+# Build output
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
