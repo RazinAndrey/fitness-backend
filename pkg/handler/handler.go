@@ -1,10 +1,16 @@
 package handler
 
 import (
+	"github.com/RazinAndrey/fitness-backend/pkg/service"
 	"github.com/gin-gonic/gin"
 )
 
 type Handler struct {
+	service *service.Service
+}
+
+func NewHandler(service *service.Service) *Handler {
+	return &Handler{}
 }
 
 // иницилизирует все наши end-points
