@@ -1,7 +1,7 @@
-package handler
+package v1
 
 import (
-	"github.com/RazinAndrey/fitness-backend/pkg/service"
+	"github.com/RazinAndrey/fitness-backend/internal/service"
 	"github.com/gin-gonic/gin"
 )
 

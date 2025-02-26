@@ -1,18 +1,18 @@
 package main
 
 import (
-	"log"
 	fitnessbackend "github.com/RazinAndrey/fitness-backend"
-	"github.com/RazinAndrey/fitness-backend/pkg/handler"
-	"github.com/RazinAndrey/fitness-backend/pkg/repository"
-	"github.com/RazinAndrey/fitness-backend/pkg/service"
+	"github.com/RazinAndrey/fitness-backend/internal/api/v1"
+	"github.com/RazinAndrey/fitness-backend/internal/repository"
+	"github.com/RazinAndrey/fitness-backend/internal/service"
+	"log"
 )
 
 func main() {
-	// наши зависимости 
+	// наши зависимости
 	repos := repository.NewRepository()
 	service := service.NewService(repos)
-	handlers := handler.NewHandler(service)
+	handlers := v1.NewHandler(service)
 
 	// иницилизация экземпляра сервера
 	srv := new(fitnessbackend.Server)

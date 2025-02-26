@@ -1,19 +1,17 @@
 package repository
 
 type Authorization interface {
-
 }
 
 type Trainer interface {
-
 }
 
-type Repository struct{
+type Repository struct {
 	Authorization
 	Trainer
 }
 
-// конструктор 
-func NewRepository() *Repository{
+// конструктор
+func NewRepository() *Repository {
 	return &Repository{}
 }
